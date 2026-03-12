@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ccbf1ed3-4c32-4e99-bcf1-08c4daaa69c8" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ca/libertyrunners/pacecalculatorservice/core/EasyPace.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ca/libertyrunners/pacecalculatorservice/core/EquivalentRace.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ca/libertyrunners/pacecalculatorservice/core/RacePace.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ca/libertyrunners/pacecalculatorservice/core/TrainingZones.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ca/libertyrunners/pacecalculatorservice/core/VdotRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ca/libertyrunners/pacecalculatorservice/core/VdotResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ca/libertyrunners/pacecalculatorservice/core/VdotValidator.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="34lMDf7RA3UWNhhHDK9VepmaeYL" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "feature/calculate-vdot",
+    "settings.editor.selected.configurable": "vcs.Git"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ccbf1ed3-4c32-4e99-bcf1-08c4daaa69c8" name="Changes" comment="" />
+      <created>1761783588562</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1761783588562</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/ca/libertyrunners/pacecalculatorservice/api/PaceController.java</url>
+          <line>23</line>
+          <properties class="ca.libertyrunners.pacecalculatorservice.api.PaceController" method="calculatePace">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/ca/libertyrunners/pacecalculatorservice/core/PaceCalculatorValidatorImpl.java</url>
+          <line>10</line>
+          <properties class="ca.libertyrunners.pacecalculatorservice.core.PaceCalculatorValidatorImpl" method="validate">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ca/libertyrunners/pacecalculatorservice/api/PaceController.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ca/libertyrunners/pacecalculatorservice/core/PaceCalculatorServiceImpl.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
