@@ -5,13 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ccbf1ed3-4c32-4e99-bcf1-08c4daaa69c8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ca/libertyrunners/pacecalculatorservice/core/EasyPace.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ca/libertyrunners/pacecalculatorservice/core/EquivalentRace.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ca/libertyrunners/pacecalculatorservice/core/RacePace.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ca/libertyrunners/pacecalculatorservice/core/TrainingZones.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ca/libertyrunners/pacecalculatorservice/core/VdotRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ca/libertyrunners/pacecalculatorservice/core/VdotResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ca/libertyrunners/pacecalculatorservice/core/VdotValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ca/libertyrunners/pacecalculatorservice/api/VdotController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ca/libertyrunners/pacecalculatorservice/core/VdotService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ca/libertyrunners/pacecalculatorservice/core/VdotServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,14 +42,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "feature/calculate-vdot",
-    "settings.editor.selected.configurable": "vcs.Git"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;feature/calculate-vdot&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
