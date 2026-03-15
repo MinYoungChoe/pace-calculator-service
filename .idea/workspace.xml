@@ -5,10 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ccbf1ed3-4c32-4e99-bcf1-08c4daaa69c8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ca/libertyrunners/pacecalculatorservice/api/VdotController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ca/libertyrunners/pacecalculatorservice/core/VdotService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ca/libertyrunners/pacecalculatorservice/core/VdotServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ca/libertyrunners/pacecalculatorservice/core/TrainingZones.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/libertyrunners/pacecalculatorservice/core/TrainingZones.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ca/libertyrunners/pacecalculatorservice/core/VdotServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/libertyrunners/pacecalculatorservice/core/VdotServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ca/libertyrunners/pacecalculatorservice/core/VdotServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ca/libertyrunners/pacecalculatorservice/core/VdotServiceImpl.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,6 +82,24 @@
           </properties>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/ca/libertyrunners/pacecalculatorservice/core/VdotServiceImpl.java</url>
+          <line>17</line>
+          <properties class="ca.libertyrunners.pacecalculatorservice.core.VdotServiceImpl" method="calculateVdot">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/ca/libertyrunners/pacecalculatorservice/core/VdotServiceImpl.java</url>
+          <line>143</line>
+          <properties class="ca.libertyrunners.pacecalculatorservice.core.VdotServiceImpl" method="buildTrainingZones">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/ca/libertyrunners/pacecalculatorservice/api/PaceController.java</url>
           <line>18</line>
@@ -91,6 +109,11 @@
           <url>file://$PROJECT_DIR$/src/main/java/ca/libertyrunners/pacecalculatorservice/core/PaceCalculatorServiceImpl.java</url>
           <line>19</line>
           <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ca/libertyrunners/pacecalculatorservice/api/VdotController.java</url>
+          <line>39</line>
+          <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

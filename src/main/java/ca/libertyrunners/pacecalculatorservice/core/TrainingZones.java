@@ -7,12 +7,9 @@ import lombok.Data;
 @Builder
 public class TrainingZones {
     private EasyPace easy;
-    private Map<String, String> marathon;
-    private Map<String, String> threshold;
-    private Map<String, String> interval;
-    private Map<String, String> repetition;
-    private Map<String, String> fastReps;
-
-
-
+    private String marathon;
+    private String threshold;
+    private String interval;
+    private String repetition;
 }
+

@@ -16,7 +16,7 @@ public class VdotServiceImpl implements VdotService {
     private final VdotValidator validator;
 
     public VdotResponse calculateVdot(VdotRequest vdotRequest) {
-        Double distance = vdotRequest.getDistance() == null ? 0D : vdotRequest.getDistance();
+        double distance = vdotRequest.getDistance() == null ? 0D : vdotRequest.getDistance();
         Duration time = setupTime(vdotRequest);
         Duration pace = setupPace(vdotRequest);
         val error = validator.validate(distance, time, pace);
@@ -33,11 +33,13 @@ public class VdotServiceImpl implements VdotService {
         double timeInMin = time.toSeconds() / 60.0;
         double distanceInMeters = distance * 1000;
         double vdot = computeVdotScore(distanceInMeters, timeInMin);
-        List<RacePace> racePaces = buildRacePaces(pace, time);
+        List<RacePace> racePaces = buildRacePaces(pace);
+        TrainingZones trainingZones = buildTrainingZones(vdot);
 
         return VdotResponse.builder()
                 .vdot(vdot)
                 .racePaces(racePaces)
+                .trainingZones(trainingZones)
                 .build();
 
 
@@ -106,14 +108,14 @@ public class VdotServiceImpl implements VdotService {
         return minutes + ":" + String.format("%02d", seconds);
     }
 
-    private List<RacePace> buildRacePaces(Duration pace, Duration time) {
+    private List<RacePace> buildRacePaces(Duration pace) {
         long paceSeconds = pace.toSeconds();
 
         List<RacePace> racePaces = new ArrayList<>();
 
         racePaces.add(RacePace.builder()
                 .distance("Marathon")
-                .pace(formatTime(time.toSeconds() / 60.0))
+                .pace(formatTime(paceSeconds * 42.195/ 60.0))
                 .build());
 
         racePaces.add(RacePace.builder()
@@ -138,5 +140,29 @@ public class VdotServiceImpl implements VdotService {
 
         return racePaces;
     }
+
+    private TrainingZones buildTrainingZones(Double vdot) {
+        double vVO2max = 29.54 + 5.000663 * vdot - 0.007546 * vdot * vdot;
+
+        double easyMin = 1000 / (vVO2max * 0.68);
+        double easyMax = 1000 / (vVO2max * 0.746);
+        double marathon = 1000 / (vVO2max * 0.85);
+        double threshold = 1000 / (vVO2max * 0.90);
+        double interval = 1000 / (vVO2max * 0.98);
+        double repetition = 1000 / (vVO2max * 1.05);
+
+        EasyPace easyPace = EasyPace.builder()
+                .min(formatTime(easyMin))
+                .max(formatTime(easyMax))
+                .build();
+
+        return TrainingZones.builder()
+                .easy(easyPace)
+                .marathon(formatTime((marathon)))
+                .threshold(formatTime(threshold))
+                .interval(formatTime(interval))
+                .repetition(formatTime(repetition)).build();
+    }
+
 
 }
