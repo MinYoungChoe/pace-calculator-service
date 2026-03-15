@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ccbf1ed3-4c32-4e99-bcf1-08c4daaa69c8" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ca/libertyrunners/pacecalculatorservice/core/TrainingZones.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/libertyrunners/pacecalculatorservice/core/TrainingZones.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ca/libertyrunners/pacecalculatorservice/core/EquivalentRace.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/libertyrunners/pacecalculatorservice/core/EquivalentRace.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ca/libertyrunners/pacecalculatorservice/core/VdotServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/libertyrunners/pacecalculatorservice/core/VdotServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/ca/libertyrunners/pacecalculatorservice/core/VdotServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ca/libertyrunners/pacecalculatorservice/core/VdotServiceImpl.class" afterDir="false" />
     </list>
@@ -93,7 +93,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/ca/libertyrunners/pacecalculatorservice/core/VdotServiceImpl.java</url>
-          <line>143</line>
+          <line>145</line>
           <properties class="ca.libertyrunners.pacecalculatorservice.core.VdotServiceImpl" method="buildTrainingZones">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />

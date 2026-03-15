@@ -35,11 +35,13 @@ public class VdotServiceImpl implements VdotService {
         double vdot = computeVdotScore(distanceInMeters, timeInMin);
         List<RacePace> racePaces = buildRacePaces(pace);
         TrainingZones trainingZones = buildTrainingZones(vdot);
+        List<EquivalentRace> equivalentRaces = buildEquivalentRaces(vdot);
 
         return VdotResponse.builder()
                 .vdot(vdot)
                 .racePaces(racePaces)
                 .trainingZones(trainingZones)
+                .equivalentRaces(equivalentRaces)
                 .build();
 
 
@@ -164,5 +166,44 @@ public class VdotServiceImpl implements VdotService {
                 .repetition(formatTime(repetition)).build();
     }
 
+    private List<EquivalentRace> buildEquivalentRaces(double vdot) {
+        List<EquivalentRace> races = new ArrayList<>();
+
+        double[][] distancesKm = {
+                {42.195}, {21.0975}, {15.0}, {10.0}, {5.0}, {3.0}
+        };
+        String[] names = {"Marathon", "Half Marathon", "15K", "10K", "5K", "3K"};
+
+        for (int i = 0; i < names.length; i++) {
+            double distanceMetres = distancesKm[i][0] * 1000;
+            double timeMin = predictRaceTimeInMinutes(vdot, distanceMetres);
+            double paceMin = timeMin / distancesKm[i][0];
+
+            races.add(EquivalentRace.builder()
+                    .race(names[i])
+                    .time(formatTime(timeMin))
+                    .pacePerKm(formatTime(paceMin))
+                    .build());
+        }
+        return races;
+    }
+
+    private double predictRaceTimeInMinutes(double vdot, double distanceInMetres) {
+        double low = 1.0;
+        double high = 1000.0;
+        double mid = 0.0;
+
+        while (high - low > 0.0001) {
+            mid = (low + high) / 2.0;
+            double predictedVdot = computeVdotScore(distanceInMetres, mid);
+
+            if (predictedVdot > vdot) {
+                low = mid;
+            } else {
+                high = mid;
+            }
+        }
+        return mid;
+    }
 
 }

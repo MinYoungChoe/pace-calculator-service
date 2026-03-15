@@ -8,7 +8,5 @@ import lombok.Data;
 public class EquivalentRace {
     private String race;
     private String time;
-    private String pacePerMile;
     private String pacePerKm;
-
 }
